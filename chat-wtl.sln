@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chat-servidor", "chat-wtl\chat-wtl.vcxproj", "{D998977B-95C8-46B2-90A7-175D724586E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chat-cliente", "chat-cliente\chat-cliente.vcxproj", "{D1A76F67-1D91-4AAC-8298-26E819686BD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A2288354-3A4F-4793-8C29-986337B4FB07}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D998977B-95C8-46B2-90A7-175D724586E9}.Debug|x64.ActiveCfg = Debug|x64
+		{D998977B-95C8-46B2-90A7-175D724586E9}.Debug|x86.ActiveCfg = Debug|x64
+		{D998977B-95C8-46B2-90A7-175D724586E9}.Release|x64.ActiveCfg = Release|x64
+		{D998977B-95C8-46B2-90A7-175D724586E9}.Release|x64.Build.0 = Release|x64
+		{D998977B-95C8-46B2-90A7-175D724586E9}.Release|x86.ActiveCfg = Release|Win32
+		{D998977B-95C8-46B2-90A7-175D724586E9}.Release|x86.Build.0 = Release|Win32
+		{D1A76F67-1D91-4AAC-8298-26E819686BD7}.Debug|x64.ActiveCfg = Debug|x64
+		{D1A76F67-1D91-4AAC-8298-26E819686BD7}.Debug|x86.ActiveCfg = Debug|x64
+		{D1A76F67-1D91-4AAC-8298-26E819686BD7}.Release|x64.ActiveCfg = Release|x64
+		{D1A76F67-1D91-4AAC-8298-26E819686BD7}.Release|x64.Build.0 = Release|x64
+		{D1A76F67-1D91-4AAC-8298-26E819686BD7}.Release|x86.ActiveCfg = Release|Win32
+		{D1A76F67-1D91-4AAC-8298-26E819686BD7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {256D4D9B-4BC0-46CF-B9D7-DEF177E20D1D}
+	EndGlobalSection
+EndGlobal

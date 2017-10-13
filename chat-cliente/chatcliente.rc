@@ -1,0 +1,163 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CHATCLIENTE         ICON                    "chatcliente.ico"
+
+IDI_SMALL               ICON                    "small.ico"
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        VERTGUIDE, 194
+        VERTGUIDE, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+        HORZGUIDE, 141
+    END
+
+    IDD_ABOUTDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDIALOG DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chat WTL - Cliente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Configuração",IDC_STATIC,200,7,102,115
+    LTEXT           "Nome:",IDC_STATIC,200,21,22,8
+    EDITTEXT        IDC_TB_NOME,200,33,102,14,ES_AUTOHSCROLL
+    LTEXT           "IP:",IDC_STATIC,200,55,10,8
+    EDITTEXT        IDC_TB_IP,200,67,102,14,ES_AUTOHSCROLL
+    LTEXT           "Porta:",IDC_STATIC,200,89,21,8
+    EDITTEXT        IDC_TB_PORTA,200,102,102,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ligar",IDC_BTN_LIGAR,200,127,50,14
+    PUSHBUTTON      "Desligar",IDC_BTN_DESLIGAR,252,127,50,14
+    PUSHBUTTON      "Fechar",IDC_BTN_FECHAR,252,155,50,14
+    EDITTEXT        IDC_TB_MSG,7,155,132,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Enviar",IDC_BTN_ENVIAR,144,155,50,14
+    EDITTEXT        IDC_TB_CHAT,7,7,187,134,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Acerca",IDC_BTN_ACERCA,200,155,50,14
+END
+
+IDD_ABOUTDIALOG DIALOGEX 0, 0, 159, 113
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDC_ABOUTDIALOG_BTN_OK,102,92,50,14
+    LTEXT           "Chat Cliente em WTL",IDC_STATIC,44,7,68,8
+    LTEXT           "Feito por Paulo Pocinho",IDC_STATIC,40,38,76,8
+    LTEXT           "Copyright (C) 2017 Paulo Pocinho",IDC_STATIC,24,22,108,8
+    LTEXT           "Turma: TPSI-CS-0117",IDC_STATIC,41,54,71,8
+    LTEXT           "Formador: Dário Quental",IDC_STATIC,37,70,80,8
+END
+
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
