@@ -7,7 +7,7 @@
 void SubstituirEmWString(std::wstring& original, const std::wstring& procurar, const std::wstring& substituir)
 {
 	size_t pos = 0;
-	while ((pos = original.find(procurar, pos)) != std::string::npos)
+	while ((pos = original.find(procurar, pos)) != std::wstring::npos)
 	{
 		original.replace(pos, procurar.length(), substituir);
 		pos += substituir.length();
