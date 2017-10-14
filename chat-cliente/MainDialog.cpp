@@ -11,7 +11,7 @@ MainDialog::MainDialog() : tc(nullptr)
 
 MainDialog::~MainDialog()
 {
-	DeleteObject(hFont);
+	DeleteObject(m_hFont);
 }
 
 LRESULT MainDialog::OnInitDialog(HWND hwndFocus, LPARAM lParam)
@@ -24,6 +24,10 @@ LRESULT MainDialog::OnInitDialog(HWND hwndFocus, LPARAM lParam)
 	SetIcon(hIcon, TRUE);
 	SetIcon(hIconSmall, FALSE);
 
+	// Seleccionar fonte Segoe UI Symbol para a caixa de texto chat
+	m_hFont = CreateFont(16, 0, 0, 0, FW_DONTCARE, FALSE, FALSE, FALSE, DEFAULT_CHARSET, OUT_OUTLINE_PRECIS,
+		CLIP_DEFAULT_PRECIS, CLEARTYPE_QUALITY, VARIABLE_PITCH, TEXT("Segoe UI Symbol"));
+
 	// Ligar os atributos da classe com os controlos
 	DoDataExchange(false);
 
@@ -33,12 +37,19 @@ LRESULT MainDialog::OnInitDialog(HWND hwndFocus, LPARAM lParam)
 
 	tb_nome_controlo.SetFocus();
 
+	tb_chat_controlo.SetFont(m_hFont, TRUE);
+
+	tb_chat_controlo.AppendText(L"Emojis:\n");
+	tb_chat_controlo.AppendText(L":) :( <3\n");
+	tb_chat_controlo.AppendText(L":yinyang: :caveira: :radioactive:\n");
+	tb_chat_controlo.AppendText(L":star: :up: :snowman: :check:\n");
+
 	return 0;
 }
 
-void MainDialog::EscreverMsg(LPTSTR msg)
+void MainDialog::EscreverMsg(std::wstring msg)
 {
-	tb_chat_controlo.AppendText(msg);
+	tb_chat_controlo.AppendText(msg.c_str());
 	tb_chat_controlo.AppendText(L"\n");
 }
 

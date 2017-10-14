@@ -15,12 +15,14 @@ public:
 	WSADATA wsa;
 
 	// socket de servidor e socket de escuta onde o cliente se liga e se efetua a ligação
-	SOCKET server_socket, listen_socket;
+	SOCKET server_socket;
+	SOCKET listen_socket;
 
 	// sockaddr_in: utilizado por Windows Sockets para especificar um endereço
 	// local ou remoto para o qual se vai ligar o socket
 	// neste caso 'server' é o endereço local e 'client' o endereço remoto
-	struct sockaddr_in server, client;
+	struct sockaddr_in server;
+	struct sockaddr_in client;
 
 	// construtor
 	CThreadServidor(MainDialog * md, int porta);

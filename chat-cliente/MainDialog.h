@@ -28,6 +28,9 @@ public:
 	// apontador para a thread cliente que vai efetuar a ligação
 	CThreadCliente * tc;
 
+	// fonte para mostrar emojis
+	HFONT m_hFont;
+
 	// Atributos da classe que conectam aos controlos
 	CEditCtl tb_nome_controlo;
 	WTL::CString tb_nome_texto;
@@ -44,8 +47,6 @@ public:
 
 	CEditCtl tb_chat_controlo;
 	WTL::CString tb_chat_texto;
-
-	HFONT hFont;
 
 	// ligar callbacks aos métodos da classe
 	BEGIN_MSG_MAP(MainDialog)
@@ -80,7 +81,7 @@ public:
 	LRESULT OnBnClickedBtnDesligar(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 	LRESULT OnBnClickedBtnAcerca(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/);
 
-	void EscreverMsg(LPTSTR msg);
+	void EscreverMsg(std::wstring msg);
 	void TerminarLigacao();
 };
 

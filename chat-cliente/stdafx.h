@@ -101,10 +101,4 @@ extern CAppModule _Module;
 
 
 
-
-
-
-
-
-
 #endif // !STDAFX_H_INCLUDED

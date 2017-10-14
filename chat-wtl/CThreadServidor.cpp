@@ -37,7 +37,7 @@ void CThreadServidor::Escutar(int porta)
 	// escutar na porta especificada
 	server.sin_port = htons(porta);
 
-	// associar um endereço local com uma socket
+	// associar um endereço local com a socket servidor
 	bind(server_socket, (struct sockaddr *)&server, sizeof(server));
 
 	// inicializar escuta com máximo de conexões predefinido
